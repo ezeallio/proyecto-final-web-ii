@@ -1,0 +1,22 @@
+/* Hide HTML5 Up and Down arrows. Oculta spinner de input number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+body {
+
+    background-image: url(../../img/seguridad/fondoSeguridad.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ajs-cancel {
+    display: none;
+}

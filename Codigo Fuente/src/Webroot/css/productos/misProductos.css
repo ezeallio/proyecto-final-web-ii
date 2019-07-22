@@ -1,0 +1,94 @@
+body {
+    background: whiteSmoke;
+}
+.cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+@media (max-width: 550px) {
+    .cards {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.card {
+    position: relative;
+    width: 31.33333%;
+    height: 380px;
+    margin: 1%;
+    box-shadow: 1px 1px 5px #999;
+}
+@media (max-width: 815px) {
+    .card {
+        width: 48%;
+    }
+}
+@media (max-width: 550px) {
+    .card {
+        width: 100%;
+    }
+}
+.card__inner {
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card:hover .card__buttons {
+    -webkit-transform: translateY(-38px);
+    transform: translateY(-38px);
+}
+.card__tagline {
+    font-size: 1rem;
+    font-weight: 100;
+}
+.card__icons {
+    margin: 0 0 50px;
+    padding: 0;
+    list-style: none;
+    color: black;
+}
+.card__icons li {
+    display: inline-block;
+    padding: 0 10px 10px;
+}
+
+.card_icons li a:hover{
+    color: #007bff;
+}
+.card__icons .fa {
+    font-size: .8rem;
+}
+.card__icons .fa:before {
+    font-size: 1.2rem;
+    display: block;
+    padding-bottom: 5px;
+}
+.card p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Hide HTML5 Up and Down arrows. Oculta spinner de input number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
